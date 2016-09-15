@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1407665339 source:d:\workspace\e-lang\src\main.cpp
+	<fstream>
+	<iostream>
+	<iomanip>
+	<map>
+	"datatypes.hpp"
+	"string_utils.hpp"
+	"args.hpp"
+	"lexer.hpp"
+	"parser.hpp"
+	"runtime.hpp"
+
+1407271133 d:\workspace\e-lang\src\args.hpp
+	<vector>
+	<string>
+	<sstream>
+	<map>
+
+1408999892 source:d:\workspace\e-lang\src\lexer.cpp
+	"lexer.hpp"
+	"errors.hpp"
+
+1407626243 d:\workspace\e-lang\src\lexer.hpp
+	<map>
+	<vector>
+	<sstream>
+	<functional>
+	"datatypes.hpp"
+
+1408996146 d:\workspace\e-lang\src\datatypes.hpp
+	<string>
+	<vector>
+	<map>
+	<cmath>
+	<cassert>
+	"string_utils.hpp"
+	"errors.hpp"
+
+1407615964 d:\workspace\e-lang\src\errors.hpp
+	<iostream>
+	<cstdlib>
+	<exception>
+
+1407662010 d:\workspace\e-lang\src\parser.hpp
+	<vector>
+	"lexer.hpp"
+
+1407665184 source:d:\workspace\e-lang\src\parser.cpp
+	"parser.hpp"
+	"errors.hpp"
+
+1407615863 source:d:\workspace\e-lang\src\errors.cpp
+	"errors.hpp"
+
+1401570343 d:\workspace\e-lang\src\string_utils.hpp
+	<algorithm>
+	<functional>
+	<locale>
+	<sstream>
+
+1407621603 source:d:\workspace\e-lang\src\datatypes.cpp
+	"datatypes.hpp"
+
+1407659337 d:\workspace\e-lang\src\runtime.hpp
+	<map>
+	<string>
+	"datatypes.hpp"
+	"errors.hpp"
+
+1407661643 source:d:\workspace\e-lang\src\runtime.cpp
+	"Runtime.hpp"
+

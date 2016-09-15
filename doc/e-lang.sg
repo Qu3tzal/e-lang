@@ -1,0 +1,25 @@
+# e-lang grammar.
+
+alpha = ['a'-'Z']
+digit = ['0'-'9']
+numeric = ((digit)+ | (digit)* '.' (digit)+ | (digit)+ '.' (digit)*)
+operator = (
+				# Specials built-in operators.
+				'program' | 'assign' | 'to_numeric' | 'to_string' | 'print' | 'input' |
+
+				# Maths built-in operators.
+				'+' | '-' | '*' | '/' | '%' | '^' | 'sin' | 'cos' | 'tan' | 'acos' | 'asin' | 'atan' | 'to_rad' | 'to_deg' | 'ln' | 'exp' | 'log10'
+			)
+identifier = (_any)*
+# You can escape using '\'.
+string = '"' _any '"'
+null = 'null'
+
+expression = numeric | identifier | string | null | '(' operator expressionlist ')' | '(' numeric ')' | '(' identifier ')' | '(' string ')' | '(' null ')'
+expressionlist = (_epsilon | expression | expressionlist)
+
+# (/ 7 8 9)
+# => (7 / 8) / 9
+
+# (% 7 8 9)
+# => (7 % 8) % 9
